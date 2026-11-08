@@ -1,0 +1,100 @@
+//1 WAP to print number is even or odd
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=10;//and 11
+		if(n%2==0)
+		{
+			System.out.println("Even");
+		}
+		else
+		{
+			System.out.println("Odd");
+		}
+	}
+}*/
+//Output:Even (if i give n=11 Output: Odd)
+
+//2 WAP to find the factors of given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=6;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			System.out.println(i);
+		}
+		}
+	}
+}*/
+//Output:1 2 3 6
+
+//3 WAP to find the count of  factors of given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=4;
+		int count=0;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			count++;
+		}
+		}
+		System.out.println(count);
+		
+	}
+}*/
+//Output:3
+
+//4 WAP to find the number is prime number or not
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=5; // and 9
+		int count=0;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			count++;
+		}
+		}
+		if(count==2)
+		{
+		System.out.println("Prime Number");
+		}
+		else
+		{
+			System.out.println("Composite Number");
+		}	
+	}
+}*/
+//Output:Prime Number (if i give n=9 Output: Composite Number)
+
+//5 WAP to find the  sum offactors of given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=4;
+		int sum=0;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			sum +=i;
+		}
+		}
+		System.out.println(sum);
+		
+	}
+}*/
+//Output:7
