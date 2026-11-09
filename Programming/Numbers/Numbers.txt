@@ -98,3 +98,159 @@
 	}
 }*/
 //Output:7
+//6
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=4;
+		int prdt=1;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			prdt *=i;
+		}
+		}
+		System.out.println(prdt);	
+	}
+}*/
+//Output:8
+
+//7
+
+//a :Break
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		for(int i=0;i<=5;i++)
+		{
+		if(i==3)
+		{
+			break;
+		}
+		System.out.println(i);
+		}
+		System.out.println("Ended");
+	}
+}*/
+//Output:0 1 2 Ended
+
+//b :Continue
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		for(int i=0;i<=5;i++)
+		{
+		if(i==3)
+		{
+			continue;
+		}
+		System.out.println(i);
+		}
+		System.out.println("Ended");
+	}
+}*/
+//Output:0 1 2 4 5 Ended
+
+//c :return
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		for(int i=0;i<=5;i++)
+		{
+		if(i==3)
+		{
+			return;
+		}
+		System.out.println(i);
+		}
+		System.out.println("Ended");
+	}
+}*/
+//Output:0 1 2 
+
+//8
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=12;//and 4
+		int count=0;
+		for(int i=1;i<=n;i++)
+		{
+		if(n%i==0)
+		{
+			count++;
+		}
+		if(count==4)
+		{
+		System.out.println(i);
+		return;
+		}
+	}
+	System.out.println("Does not Exist");
+	}
+}*/
+//Output:4 (if i give n=4 Output: Does not Exist)
+
+//9 WAP to calacualte the exponent/power of a given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int base=3;
+		int power=4;
+		int res=1;
+		for(int i=1;i<=power;i++)
+		{
+		res *= base;
+		}
+		System.out.println(res);	
+	}
+}*/
+//Output:81
+
+//Using Scanner class 
+/*import java.util.Scanner;
+class Demo
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the base");
+		int base=sc.nextInt();
+		System.out.println("Enter the power");
+		int power=sc.nextInt();
+		int res=1;
+		for(int i=1;i<=power;i++)
+		{
+		res *= base;
+		}
+		System.out.println(res);	
+	}
+}*/
+//Output:Enter the base :3
+//		 Enter the power:4
+//                       81
+
+//10 WAP to find the factorial of a given number 
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=5;
+		int fact=1;
+		for(int i=1;i<=n;i++)
+		{
+		fact *= i;
+		}
+		System.out.println(fact);	
+	}
+}*/
+//Output:120
+
+
