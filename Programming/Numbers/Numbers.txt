@@ -253,4 +253,102 @@ class Demo
 }*/
 //Output:120
 
+//11 WAP to extract/print last digit present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		int last=n%10;
+		System.out.println(last);
+		//System.out.println(n);
+	}
+}*/
+//Output:3
 
+
+//12 WAP to remove last digit present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		//int last=n/10;
+		n=n/10;
+		//System.out.println(last);
+		System.out.println(n);
+	}
+}*/
+//Output:12
+
+
+//13 WAP to print digits present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		while(n!=0)
+		{
+		int last=n%10;
+		System.out.println(last);
+		n=n/10;
+		}
+	}
+}*/
+//Output:3 2 1
+
+//Using Scanner class 
+/*import java.util.Scanner;
+class Demo
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int n=sc.nextInt();
+		while(n!=0)
+		{
+		int last=n%10;
+		System.out.println(last);
+		n=n/10;
+		}
+	}
+}*/
+//Output:3 2 1
+
+//14 WAP to calucate the sum of digits present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		int sum=0;
+		while(n!=0)
+		{
+		int last=n%10;
+		sum +=last;
+		System.out.println(sum);
+		n=n/10;
+		}
+	}
+}*/
+//Output:6
+
+//15 WAP to calucate the product of digits present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		int prdt=1;
+		while(n!=0)
+		{
+		int last=n%10;
+		prdt *=last;
+		n=n/10;
+		}
+		System.out.println(prdt);
+	}
+}*/
+//Output:6
