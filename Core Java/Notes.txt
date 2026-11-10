@@ -1,0 +1,112 @@
+Java
+Java is a programming language.
+
+Language
+Language is a medium to communicate between two entities.
+Entities: Which exist in the world and occupy space.
+Example: Human beings communicate with each other using language.
+
+Programming Language
+Programming language is a medium to communicate between humans and machines/system.
+Example:
+- Human gives instructions to a machine.
+- The machine understands the instructions through a programming language.
+
+Types of Programming Languages
+1. Machine Level Language (Low-Level Language)
+2. Assembly Level Language (Mid-Level Language)
+3. High-Level Language
+
+2. Types of Programming Languages
+1. Machine Level Language (Low-Level Language)
+- It is understandable by machines.
+- It is a binary language.
+- It has two representatives:
+  - 0
+  - 1
+- It is near to machines and far from humans.
+
+2. Assembly Level Language (Mid-Level Language)
+- It is in a human-readable format.
+- We have a set of instructions called mnemonics and keywords (predefined words).
+- Examples: ADD, MOV, SUB, MUL, etc.
+Difficulties:
+- Machines cannot understand Assembly Language directly.
+- We need to convert Assembly Language (AL) into Machine Level Language (MLL).
+- We need software called an Assembler.
+- 8086 instructions are an example.
+Advantages:
+- Easier for humans to write and understand.
+
+3. High-Level Language
+- It is in a human-readable format.
+- Examples: Java, Python, C, C++ and C#.
+- Machine cannot understand High-Level Language directly.
+- We need to convert High-Level Language (HLL) into Machine Level Language (MLL).
+- We need software:
+  - Compiler
+  - Interpreter
+Advantages:
+- Easier to learn.
+- Easier to write.
+- Easier to debug and maintain.
+
+Two Types of HLL
+1. POPL
+2. OOPL
+
+POPL – Procedure Oriented Programming Language
+- Focuses on procedures/functions.
+- Example: C.
+- No OOPS.
+OOPL – Object Oriented Programming Language
+- Focuses on objects.
+- Examples: Java, Python, C++.
+Java is a High-Level Object-Oriented Programming Language.
+
+3. History of Java
+James Gosling is known as the Father of Java.
+History
+1. James Gosling was working in Sun Microsystems as a software developer.
+2. One day, he came up with an idea to develop a programming language which could run on any system.
+3. He needed a team and called it the Green Team.
+4. He started a project. The project name was Green Project.
+5. He finished and published it in the year 1991 as Green Talk.
+Naming of Java
+1. One day, they stood outside a company with a coffee shop. They thought their programming language idea would grow like a tree.
+2. So, they kept the tree name called Oak.
+3. Oak was already a company name with a business, so they could not continue using it.
+4. Then they changed the name in 1995 to Java.
+5. Java is a coffee name. When they were building the project, they drank coffee called Java coffee.
+6. Then, in 2010, the Oracle company took over Sun Microsystems.
+7. So, Java comes under Oracle (with the Java chair/name under Oracle).
+Important timeline:
+- 1991 – Green Project / Green Talk
+- 1995 – Java
+- 2010 – Oracle acquired Sun Microsystems
+
+4. Features of Java
+1. Java is Simple
+- Human-readable format.
+2. Java is Platform Independent (WORA)
+- WORA – Write Once, Run Anywhere.
+- Write once and read/run anywhere.
+- Example: 32-bit Windows.
+3. Java is Object-Oriented Programming Language
+- Deals with objects.
+4. Java is Secure
+- Bytecode.
+5. Java is Flexible
+6. Java is Robust
+- It has many built-in libraries to handle errors.
+7. Java supports Multithreading
+- Many tasks can be performed.
+- Example: YouTube.
+
+Important: Java is platform independent but platform dependent on JDK/JRE (as written in the notebook).
+
+Additional Notes
+- We cannot remember all 8086 instructions, so we use High-Level Languages.
+- Assembly Language uses mnemonics such as ADD, MOV, SUB and MUL.
+- Assembly Language requires an Assembler.
+- High-Level Language requires a Compiler or Interpreter.
