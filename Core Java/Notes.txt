@@ -105,6 +105,177 @@ Important timeline:
 
 Important: Java is platform independent but platform dependent on JDK/JRE (as written in the notebook).
 
+### Java Handwritten Notes – Text Format (Continued)
+
+### 5\. Platform Dependent and Platform Independent
+
+### Platform Dependent
+
+* A program that is dependent on a particular platform is called platform dependent.
+
+* Example: C language.
+
+Example:
+
+* Smith writes a program on a 32-bit Windows system.
+
+* It may not run directly on a 64-bit or another platform.
+
+* We need platform-specific compilation.
+
+### Platform Independent
+
+* A program that is not dependent on a particular platform is called platform independent.
+
+* Example: Java.
+
+Example:
+
+* Smith writes a Java program on a 32-bit Windows system.
+
+* The same program can run on 32-bit Linux, 64-bit Windows and other platforms using the appropriate JVM.
+
+Note:
+
+* C is a platform-dependent language.
+
+* Java is platform independent but dependent on JDK/JRE (as written in the notebook).
+
+* Java is platform independent because of Bytecode.
+
+### 6\. JDK (Java Development Kit)
+
+JDK = Java Development Kit
+
+JDK is software that contains many sub-softwares inside it.
+
+* It contains JRE and Compiler inside it.
+
+* It provides an environment to both write and run programs.
+
+### JDK Structure
+
+```text
+JDK (Java Development Kit)
+│
+├── JRE (Java Runtime Environment)
+│   │
+│   ├── JVM (Java Virtual Machine)
+│   │   │
+│   │   ├── JIT (Just-In-Time Compiler)
+│   │   │
+│   │   └── Interpreter
+│   │
+│   └── In-built Packages / Classes / Libraries
+│
+└── Compiler
+```
+
+### 7\. JRE (Java Runtime Environment)
+
+* It is a sub-software of JDK.
+
+* It contains JVM and in-built packages inside it.
+
+* It provides an environment to run Java programs.
+
+### 8\. Compiler
+
+* It is a sub-software of JDK.
+
+* It is used to convert from HLL to MLL.
+
+* It will read the code once.
+
+### 9\. JVM (Java Virtual Machine)
+
+* It is a sub-software of JRE.
+
+* It contains JIT and Interpreter inside it.
+
+* It is a machine used to run Java programs.
+
+### 10\. JIT (Just-In-Time Compiler)
+
+* It is a sub-software of JVM.
+
+* It will speed up the interpreter.
+
+### 11\. Interpreter
+
+* It is a sub-software of JVM.
+
+* It is used to convert HLL to MLL.
+
+* It will read the code line by line.
+
+### 12\. Compilation and Execution
+
+Can we send Compiler to Interpreter without a class file?
+
+* Platform independent.
+
+* Secure.
+
+* The compiler works to send the code to JRE and JVM.
+
+* JVM only understands Bytecode, so we need a class file to push to the Interpreter.
+
+### Compilation Process
+
+Flow:
+
+Java Source File (.java)
+
+The place to write the Java program
+
+Compiler
+
+* Takes source file as input
+
+* Checks for syntactical mistakes
+
+* If mistake → CT error
+
+* If no mistake → Generates bytecode
+
+Class File (.class)
+
+Bytecode – Intermediate language (neither understandable by humans nor directly by machines)
+
+Interpreter / JVM
+
+* Takes class file as input
+
+* Checks for logical mistakes
+
+* If mistake → RT error
+
+* If no mistake → Executes the program
+
+Output
+
+### Errors
+
+* CTE – Compile Time Error
+
+* RTE – Runtime Error
+
+### Compilation
+
+* Compilation: The process of converting from Source File to Class File.
+
+* Compile Time: The time taken to convert Source File to Class File.
+
+### Execution
+
+* Execution: The process of converting from Class File to Output.
+
+* Runtime / Execution Time: The time taken to convert Class File to Output.
+
+Note: Your notebook uses simplified descriptions of some Java components. For technical accuracy, the Java compiler (`javac`) converts `.java` source code into `.class` bytecode. The JVM executes that bytecode using its execution engine, which includes an interpreter and JIT compiler.
+
+
 Additional Notes
 - We cannot remember all 8086 instructions, so we use High-Level Languages.
 - Assembly Language uses mnemonics such as ADD, MOV, SUB and MUL.
