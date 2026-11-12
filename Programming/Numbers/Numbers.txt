@@ -352,3 +352,130 @@ class Demo
 	}
 }*/
 //Output:6
+
+//16 WAP to calucate the count of digits present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		int count=0;
+		while(n!=0)
+		{
+		count++;
+		n=n/10;
+		}
+		System.out.println(count);
+	}
+}*/
+//Output:3
+
+//17 WAP to print the even of digits present in given number
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		while(n!=0)
+		{
+		int last=n%10;
+		if(last%2==0)
+		{
+		System.out.println(last);	
+		}
+		n=n/10;
+		}
+	}
+}*/
+//Output:2
+
+//18 WAP to print the prime digits present in given number
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 123;
+        while(n > 0)
+        {
+            int last = n % 10;
+            int count = 0;
+            for(int i = 1; i <= last; i++)
+            {
+                if(last % i == 0)
+                {
+                    count++;
+                }
+            }
+            if(count == 2)
+            {
+                System.out.println(last);
+            }
+            n = n / 10;
+        }
+    }
+}*/
+//Output: 3 2
+
+//Or
+
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 123;
+		int count=0;
+		
+        while(n > 0)
+        {
+			int last=n%10;
+			if(last==2||last==3||last==5||last==7)
+			{
+				System.out.println(last);
+			}
+			n=n/10;
+		}
+	}
+}*/
+
+//19 WAP  to reverse a given number
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 123;
+		int rev=0;
+        while(n > 0)
+        {
+			int last=n%10;
+			rev=rev*10+last;
+			//System.out.println(rev);
+			n=n/10;
+		}
+		System.out.println(rev);
+	}
+}*/
+//Output:3
+         //32
+         //321
+//Or : 321
+
+//20 WAP to check number is palindrome or not
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 121;
+		int rev=0;
+		int temp=n;
+        while(n > 0)
+        {
+			int last=n%10;
+			rev=rev*10+last;
+			n=n/10;
+		}
+		if(temp==rev)
+		System.out.println("Palindrome");
+	}
+}*/
+//Output:Palindrome
+
