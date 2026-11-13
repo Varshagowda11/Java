@@ -275,8 +275,41 @@ Output
 
 Note: Your notebook uses simplified descriptions of some Java components. For technical accuracy, the Java compiler (`javac`) converts `.java` source code into `.class` bytecode. The JVM executes that bytecode using its execution engine, which includes an interpreter and JIT compiler.
 
+Flow:
+Java Source File (.java)
 
+The place to write the Java program
+
+Compiler
+- Takes source file as input
+- Checks for syntactical mistakes
+- If mistake → CT error
+- If no mistake → Generates bytecode
+
+Class File (.class)
+
+Bytecode – Intermediate language (neither understandable by humans nor directly by machines)
+
+Interpreter / JVM
+- Takes class file as input
+- Checks for logical mistakes
+- If mistake → RT error
+- If no mistake → Executes the program
+
+Output
+
+Errors
+- CTE – Compile Time Error
+- RTE – Runtime Error
+Compilation
+- Compilation: The process of converting from Source File to Class File.
+- Compile Time: The time taken to convert Source File to Class File.
+Execution
+- Execution: The process of converting from Class File to Output.
+- Runtime / Execution Time: The time taken to convert Class File to Output.
 Additional Notes
+
+Demo47
 - We cannot remember all 8086 instructions, so we use High-Level Languages.
 - Assembly Language uses mnemonics such as ADD, MOV, SUB and MUL.
 - Assembly Language requires an Assembler.
