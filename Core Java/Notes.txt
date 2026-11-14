@@ -295,7 +295,28 @@ Interpreter / JVM
 - Checks for logical mistakes
 - If mistake → RT error
 - If no mistake → Executes the program
+Flow:
+Java Source File (.java)
 
+The place to write the Java program
+
+Compiler
+- Takes source file as input
+- Checks for syntactical mistakes
+- If mistake → CT error
+- If no mistake → Generates bytecode
+
+Class File (.class)
+
+Bytecode – Intermediate language (neither understandable by humans nor directly by machines)
+
+Interpreter / JVM
+- Takes class file as input
+- Checks for logical mistakes
+- If mistake → RT error
+- If no mistake → Executes the program
+
+Output
 Output
 
 Errors
@@ -314,3 +335,5 @@ Demo47
 - Assembly Language uses mnemonics such as ADD, MOV, SUB and MUL.
 - Assembly Language requires an Assembler.
 - High-Level Language requires a Compiler or Interpreter.
+
+
