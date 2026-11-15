@@ -479,3 +479,136 @@ class Demo
 }*/
 //Output:Palindrome
 
+//20 WAP to check number is palindrome or not
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 121;
+		int rev=0;
+		int temp=n;
+        while(n > 0)
+        {
+			int last=n%10;
+			rev=rev*10+last;
+			n=n/10;
+		}
+		if(temp==rev)
+		System.out.println("Palindrome");
+	}
+}*/
+//Output:Palindrome
+
+
+//21. Write a program to check given number is Harshad or not.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 123;
+        int temp = n;
+        int sum = 0;
+
+        while(n != 0)
+        {
+            int last = n % 10;
+            sum = sum + last;
+            n = n / 10;
+        }
+
+        if(temp % sum == 0)
+            System.out.println("Harshad no");      
+    }
+}*/
+//Output:Harshad no
+
+
+//22. Write a program to check given number is Spy no or not.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 123;
+        int sum = 0;
+        int prod = 1;
+        while(n != 0)
+        {
+            int last = n % 10;
+            sum = sum + last;
+            prod = prod * last;
+            n = n / 10;
+        }
+        if(sum == prod)
+            System.out.println("Spy no");
+    }
+}*/
+//Output:Spy no
+
+
+//23. Write a program to check the given number is perfect number or not.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 6;
+        int sum = 0;
+
+        for(int i = 1; i < n; i++)
+        {
+            if(n % i == 0)
+            {
+                sum = sum + i;
+            }
+        }
+
+        if(sum == n)
+            System.out.println("Perfect no");    
+    }
+}*/
+//Output:Perfect no
+
+
+
+//24. Write a program to check the given number is Neon number or not.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 9;
+        int sum = 0;
+        int sq = n * n;
+
+        while(sq != 0)
+        {
+            int last = sq % 10;
+
+            sum = sum + last;
+
+            sq = sq / 10;
+        }
+
+        if(sum == n)
+            System.out.println("Neon no");
+    }
+}*/
+//Output:Neon no
+
+
+//25. Write a program to extract first digit of given number.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 931;
+
+        while(n > 9)
+        {
+            n = n / 10;
+        }
+
+        System.out.println(n);
+    }
+}*/
+//Output:9
+
+
