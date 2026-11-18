@@ -611,4 +611,132 @@ class Demo
 }*/
 //Output:9
 
+//26. Write a program to check the given number is perfect square or not.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 16;
+		int sq = i * i;
+
+        for(int i = 1; i <= n; i++)
+        {
+
+            if(sq == n)
+            {
+                System.out.println("Perfect square");
+                return;
+            }
+
+            if(sq > n)
+            {
+                System.out.println("Not a Perfect square");
+                return;
+            }
+        }
+    }
+}*/
+//Output:Perfect square
+
+
+// 27. Write a program to check a given number is an Automorphic number or not.
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=25;
+		int sq=n*n;
+
+		while(n!=0)
+		{
+			int l1=n%10;
+			int l2=sq%10;
+
+			if(l1!=l2)
+			{
+				System.out.println("Not Automorphic");
+				return;
+			}
+
+			n=n/10;
+			sq=sq/10;
+		}
+
+		System.out.println("Automorphic");
+	}
+}*/
+
+// 28. Write a program to check a given number is a two digit number or not.
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n=19;
+		int sum=0;
+		int prd=1;
+		int temp=n;
+		while(n!=0)
+		{
+			int last = n%10;
+			sum=sum+last;
+			prd=prd*last;
+			n=n/10;
+		}
+		int res=sum+prd;
+		if(temp==res)
+		{
+			System.out.println("Special two-digit");
+		}
+		else
+		{
+			System.out.println("Not Special two-digit");
+		}
+	}
+}*/
+
+// 29. Write a program to check a given number is a Duck number or not.
+/*class Demo
+{
+	public static void main(String[] args)
+	{
+		int n= 100;
+		while(n!=0)
+		{
+			int last=n%10;
+			if(last==0)
+			{
+				System.out.println("Duck no");
+				return;
+			}
+			n=n/10;
+		}
+
+		System.out.println("Not a Duck no");
+	}
+}*/
+
+//30.WAP to check number is sunny or not
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 15;
+		int sum=n+1;
+        for(int i = 1; i <= n; i++)
+        {
+			int sq=i*i;
+            if(sq == sum)
+            {
+                System.out.println("Sunny no");
+                return;
+            }
+            if(sq > n)
+            {
+                System.out.println("Not a Sunny no");
+                return;
+            }
+        }
+    }
+}*/
+
 
