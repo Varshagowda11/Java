@@ -739,4 +739,141 @@ class Demo
     }
 }*/
 
+// 31. Write a program to print even factors of a given number.
+
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 12;
+        int check = 0;
+
+        for (int i = 1; i <= n; i++)
+        {
+            if (n % i == 0 && i % 2 == 0)
+            {
+                System.out.println(i);
+                check++;
+            }
+        }
+        if (check == 0)
+        {
+            System.out.println("Does not exist");
+        }
+    }
+}*/
+
+// 32. Write a program to print odd digits of a given number.
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 236;
+        int check = 0;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+
+            if (last % 2 != 0)
+            {
+                System.out.println(last);
+                check++;
+            }
+
+            n = n / 10;
+        }
+
+        if (check == 0)
+        {
+            System.out.println("Does not exist");
+        }
+    }
+}*/
+
+// 33. Write a program to check whether a given digit is present in a number or not.
+
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 246;
+        int digit = 4;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+
+            if (last == digit)
+            {
+                System.out.println("Present");
+                return;
+            }
+
+            n = n / 10;
+        }
+
+        System.out.println("Not present");
+    }
+}*/
+
+// 34. Write a program to print the 5th factor of a given number.
+
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 24;
+        int count = 0;
+
+        for (int i = 1; i <= n; i++)
+        {
+            if (n % i == 0)
+            {
+                count++;
+            }
+
+            if (count == 5)
+            {
+                System.out.println(i);
+                return;
+            }
+        }
+
+        System.out.println("Does not exist");
+    }
+}*/
+
+// 35. Write a program to check whether a given number
+/*class Demo
+{
+    public static void main(String[] args)
+    {
+        int n = 1234;
+        int last = n % 10;
+        int extreme=0;
+        int mean = 0;
+
+        n = n / 10;
+
+        while (n > 9)
+        {
+            int digit = n % 10;
+            mean = mean + digit;
+            n = n / 10;
+        }
+
+        extreme = last + n;
+
+        if (mean == extreme)
+        {
+            System.out.println("Xylem number");
+        }
+        else
+        {
+            System.out.println("Phloem number");
+        }
+    }
+}*/
+
 
