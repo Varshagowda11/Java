@@ -335,5 +335,20 @@ Demo47
 - Assembly Language uses mnemonics such as ADD, MOV, SUB and MUL.
 - Assembly Language requires an Assembler.
 - High-Level Language requires a Compiler or Interpreter.
-
+Example: public class Student
+Main Method
+It is the starting point of a traditional standalone Java application.
+JVM calls the main method to start program execution.
+Example: public static void main(String[] args)
+Statements
+Statements are instructions given to the computer.
+Example: System.out.println("Hello Java");
+2. Components of Java Language (Tokens)
+Tokens are the smallest individual units of a Java program.
+There are 5 main types of tokens:
+Keywords
+Identifiers
+Literals
+Operators
+Separators
 
