@@ -876,4 +876,196 @@ class Demo
     }
 }*/
 
+// 36. Write a program to check whether a given number
+/*class Demo
+{
+    public static boolean isPrime(int n)
+    {
+        int count = 0;
+
+        for (int i = 1; i <= n; i++)
+        {
+            if (n % i == 0)
+            {
+                count++;
+            }
+        }
+
+        return count == 2;
+    }
+
+    public static int reverse(int n)
+    {
+        int rev = 0;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+            rev = rev * 10 + last;
+            n = n / 10;
+        }
+
+        return rev;
+    }
+
+    public static void main(String[] args)
+    {
+        int n = 13;
+
+        if (isPrime(n))
+        {
+            int rev = reverse(n);
+
+            if (isPrime(rev))
+            {
+                System.out.println("Twisted prime");
+            }
+            else
+            {
+                System.out.println("Not twisted prime");
+            }
+        }
+        else
+        {
+            System.out.println("Not prime");
+        }
+    }
+}*/
+
+//37 Write a program to check whether a given number is an Armstrong number or not.
+/*class Demo
+{
+    public static int exponent(int base, int power)
+    {
+        int res = 1;
+
+        for (int i = 1; i <= power; i++)
+        {
+            res = res * base;
+        }
+
+        return res;
+    }
+
+    public static void main(String[] args)
+    {
+        int n = 153;
+        int temp = n;
+        int count = 0;
+        int sum = 0;
+
+        while (n != 0)
+        {
+            count++;
+            n = n / 10;
+        }
+
+        n = temp;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+            sum = sum + exponent(last, count);
+            n = n / 10;
+        }
+
+        if (temp == sum)
+        {
+            System.out.println("Armstrong Number");
+        }
+        else
+        {
+            System.out.println("Not an Armstrong Number");
+        }
+    }
+}*/
+
+//38 Write a program to check whether a given number is a Strong Number or not.
+/*class Demo
+{
+    public static int factorial(int n)
+    {
+        int fact = 1;
+
+        for(int i=1;i<=n;i++)
+        {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+
+    public static void main(String[] args)
+    {
+        int n = 145;
+        int temp = n;
+        int sum = 0;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+            sum = sum + factorial(last);
+            n = n / 10;
+        }
+
+        if (temp == sum)
+        {
+            System.out.println("Strong Number");
+        }
+        else
+        {
+            System.out.println("Not a Strong Number");
+        }
+    }
+}*/
+
+//39 Write a program to check whether a given number is an diassarium number or not.
+/*class Demo
+{
+    public static int exponent(int base, int power)
+    {
+        int res = 1;
+
+        for (int i = 1; i <= power; i++)
+        {
+            res = res * base;
+        }
+
+        return res;
+    }
+
+    public static void main(String[] args)
+    {
+        int n = 135;
+        int temp = n;
+        int count = 0;
+        int sum = 0;
+
+        while (n != 0)
+        {
+            count++;
+            n = n / 10;
+        }
+
+        n = temp;
+
+        while (n != 0)
+        {
+            int last = n % 10;
+            sum = sum + exponent(last, count);
+			count--;
+            n = n / 10;
+        }
+
+        if (temp == sum)
+        {
+            System.out.println("diassarium Number");
+        }
+        else
+        {
+            System.out.println("Not an diassarium Number");
+        }
+    }
+}*/
+
 
