@@ -352,3 +352,221 @@ Literals
 Operators
 Separators
 
+### Java Notes – Variables in Java
+
+### 1\. What is a Variable?
+
+A variable is a container used to store data in a program.
+
+* It is used to store values.
+
+* Every variable has a name and a data type.
+
+* The value of a variable can be changed during program execution.
+
+Syntax:
+
+```java
+dataType variableName = value;
+```
+
+Example:
+
+```java
+int age = 22;
+String name = "Varsha";
+```
+
+Here:
+
+* `int` – Data type
+
+* `age` – Variable name
+
+* `22` – Value
+
+### 2\. Types of Variables in Java
+
+Based on where they are declared, variables are mainly classified into three types:
+
+* Local Variable
+
+* Instance Variable
+
+* Static Variable
+
+Sometimes, instance and static variables are collectively called global variables in beginner-level explanations. However, Java technically calls them fields or member variables.
+
+### 3\. Local Variable
+
+Definition: A variable declared inside a method, constructor or block is called a local variable.
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int a = 10;  // Local variable
+        int b = 20;  // Local variable
+
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+
+Characteristics:
+
+* Declared inside a method, constructor or block.
+
+* Scope is limited to the block where it is declared.
+
+* Memory is associated with method/block execution.
+
+* No default value is provided.
+
+* We must initialize it before using it.
+
+### 4\. Global Variables
+
+Global variables are commonly used to refer to variables declared inside a class but outside methods.
+
+There are two types:
+
+### A. Instance Variable (Non-static Variable)
+
+Definition: A variable declared inside a class but outside methods, without using the `static` keyword, is called an instance variable.
+
+Example:
+
+```java
+class Student
+{
+    int age = 22;  // Instance variable
+
+    public static void main(String[] args)
+    {
+        Student s = new Student();
+
+        System.out.println(s.age);
+    }
+}
+```
+
+Output:
+
+```text
+22
+```
+
+Characteristics:
+
+* Declared inside a class and outside methods.
+
+* Does not use the `static` keyword.
+
+* Each object gets its own copy.
+
+* Gets a default value.
+
+* Accessed using an object reference.
+
+### B. Static Variable (Class Variable)
+
+Definition: A variable declared inside a class using the `static` keyword is called a static variable.
+
+Example:
+
+```java
+class Student
+{
+    static String college = "DBIT";
+
+    public static void main(String[] args)
+    {
+        System.out.println(Student.college);
+    }
+}
+```
+
+Output:
+
+```text
+DBIT
+```
+
+Characteristics:
+
+* Declared inside a class using `static`.
+
+* Only one shared copy exists per class (per class loader).
+
+* Memory is associated with the class.
+
+* Gets a default value.
+
+* Can be accessed using the class name.
+
+### 5\. Difference Between Local, Instance and Static Variables
+
+| Feature       | Local                     | Instance         | Static       |
+| ------------- | ------------------------- | ---------------- | ------------ |
+| Declaration   | Inside method/block       | Inside class     | Inside class |
+| Keyword       | No special keyword        | No static        | static       |
+| Memory        | During execution          | With object      | With class   |
+| Default value | No                        | Yes              | Yes          |
+| Copy          | Per declaration/execution | Per object       | Shared       |
+| Access        | Directly within scope     | Object reference | Class name   |
+
+### 6\. One Program to Understand All Three
+
+```java
+class VariableDemo
+{
+    int a = 10;          // Instance variable
+    static int b = 20;  // Static variable
+
+    public static void main(String[] args)
+    {
+        int c = 30;      // Local variable
+
+        VariableDemo obj = new VariableDemo();
+
+        System.out.println(obj.a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+}
+```
+
+Output:
+
+```text
+10
+20
+30
+```
+
+### 7\. Important Interview Questions
+
+* What is a variable in Java?
+
+* How many types of variables are there in Java?
+
+* What is a local variable?
+
+* What is an instance variable?
+
+* What is a static variable?
+
+* What is the difference between instance and static variables?
+
+* Do local variables have default values?
+
+* Can we access an instance variable without creating an object from a static method?
+
+Local = Inside method | Instance = Per object | Static = Shared by class
+
+
