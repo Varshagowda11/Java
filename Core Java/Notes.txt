@@ -569,4 +569,311 @@ Output:
 
 Local = Inside method | Instance = Per object | Static = Shared by class
 
+### Java Notes – Data Types in Java
+
+### 1\. What is a Data Type?
+
+A data type specifies what type of value a variable can store.
+
+* It defines the size of data.
+
+* It specifies the type of value stored in a variable.
+
+* It helps the compiler understand what kind of data is being used.
+
+Example:
+
+```java
+int age = 22;
+float salary = 25000.5f;
+char grade = 'A';
+String name = "Varsha";
+```
+
+Here:
+
+* `int` stores integer values.
+
+* `float` stores decimal values.
+
+* `char` stores a single character.
+
+* `String` stores a sequence of characters.
+
+### 2\. Types of Data Types in Java
+
+Java data types are classified into two types:
+
+Data Types
+
+Primitive
+
+8 types
+
+Non-Primitive
+
+Reference types
+
+Primitive: byte, short, int, long, float, double, char, boolean
+
+Non-Primitive: String, Arrays, Classes, Interfaces, etc.
+
+### 3\. Primitive Data Types
+
+Primitive data types are predefined data types in Java.
+
+Java has 8 primitive data types.
+
+| Data type | Size          | Example           |
+| --------- | ------------- | ----------------- |
+| byte      | 1 byte        | byte a = 10;      |
+| short     | 2 bytes       | short a = 100;    |
+| int       | 4 bytes       | int a = 1000;     |
+| long      | 8 bytes       | long a = 10000L;  |
+| float     | 4 bytes       | float a = 10.5f;  |
+| double    | 8 bytes       | double a = 20.55; |
+| char      | 2 bytes       | char a = 'A';     |
+| boolean   | JVM-dependent | boolean a = true; |
+
+### A. Integer Data Types
+
+These are used to store whole numbers.
+
+1\. byte
+
+* Size: 1 byte (8 bits)
+
+* Range: -128 to 127
+
+```java
+byte a = 100;
+System.out.println(a);
+```
+
+2\. short
+
+* Size: 2 bytes (16 bits)
+
+* Range: -32,768 to 32,767
+
+```java
+short a = 20000;
+```
+
+3\. int
+
+* Size: 4 bytes (32 bits)
+
+* Range: -2³¹ to 2³¹ - 1
+
+```java
+int a = 100000;
+```
+
+4\. long
+
+* Size: 8 bytes (64 bits)
+
+* Range: -2⁶³ to 2⁶³ - 1
+
+```java
+long a = 9876543210L;
+```
+
+### B. Floating-Point Data Types
+
+These are used to store decimal values.
+
+5\. float
+
+* Size: 4 bytes (32 bits)
+
+* Use `f` or `F` at the end.
+
+```java
+float salary = 25000.5f;
+```
+
+6\. double
+
+* Size: 8 bytes (64 bits)
+
+* Used for more precision than float.
+
+* Default type for decimal literals.
+
+```java
+double price = 25000.5678;
+```
+
+### C. Character Data Type
+
+7\. char
+
+* Size: 2 bytes (16 bits)
+
+* Stores a single character.
+
+* Uses single quotes.
+
+```java
+char grade = 'A';
+```
+
+### D. Boolean Data Type
+
+8\. boolean
+
+* Stores only two values: `true` or `false`.
+
+* Used in conditional statements.
+
+```java
+boolean result = true;
+```
+
+### 4\. Non-Primitive Data Types
+
+Non-primitive data types are also called reference data types.
+
+* They are used to store references to objects.
+
+* They can have methods.
+
+* They can be created by programmers or provided by Java.
+
+Examples:
+
+### 1\. String
+
+```java
+String name = "Varsha";
+System.out.println(name);
+```
+
+### 2\. Array
+
+```java
+int a[] = {10, 20, 30};
+
+System.out.println(a[0]);
+```
+
+### 3\. Class
+
+```java
+class Student
+{
+    int age = 22;
+}
+```
+
+### 4\. Interface
+
+```java
+interface Demo
+{
+    void display();
+}
+```
+
+### 5\. Difference Between Primitive and Non-Primitive
+
+| Primitive                               | Non-Primitive                            |
+| --------------------------------------- | ---------------------------------------- |
+| Predefined by Java                      | Built-in or user-defined reference types |
+| 8 types                                 | Many types                               |
+| Stores actual values                    | Stores references                        |
+| Cannot call methods on primitive values | Can have methods                         |
+| Cannot be null                          | Can be null                              |
+
+### 6\. Important Points for Interviews
+
+* How many primitive data types are there in Java? — 8.
+
+* Which is the smallest integer data type? — byte.
+
+* Which is the largest integer data type? — long.
+
+* Which data type stores decimal values? — float and double.
+
+* Which data type stores a single character? — char.
+
+* Which data type stores true or false? — boolean.
+
+* What is the default type of an integer literal? — int.
+
+* What is the default type of a decimal literal? — double.
+
+* Which suffix is used for long? — L.
+
+* Which suffix is used for float? — f.
+
+### 7\. Practice Programs
+
+Program 1: Declare all primitive data types
+
+```java
+class DataTypes
+{
+    public static void main(String[] args)
+    {
+        byte a = 10;
+        short b = 100;
+        int c = 1000;
+        long d = 10000L;
+
+        float e = 10.5f;
+        double f = 20.55;
+
+        char g = 'A';
+        boolean h = true;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println(h);
+    }
+}
+```
+
+Program 2: Find the size of primitive data types
+
+```java
+class Size
+{
+    public static void main(String[] args)
+    {
+        System.out.println(Byte.SIZE);
+        System.out.println(Short.SIZE);
+        System.out.println(Integer.SIZE);
+        System.out.println(Long.SIZE);
+        System.out.println(Float.SIZE);
+        System.out.println(Double.SIZE);
+        System.out.println(Character.SIZE);
+    }
+}
+```
+
+Output is in bits.
+
+Remember for interviews
+
+* Primitive = 8 data types.
+
+* Non-Primitive = Reference types.
+
+* `float` needs `f`.
+
+* `long` needs `L`.
+
+* `char` uses single quotes.
+
+* `String` uses double quotes.
+
+Next topic: Type Casting in Java (Widening and Narrowing).
 
