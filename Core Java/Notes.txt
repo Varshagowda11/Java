@@ -877,3 +877,309 @@ Remember for interviews
 
 Next topic: Type Casting in Java (Widening and Narrowing).
 
+### Java Notes – Decision-Making Statements
+
+### 1\. What is a Decision-Making Statement?
+
+A Decision-Making Statement is used to make decisions based on conditions in a Java program.
+
+* It checks whether a condition is true or false.
+
+* If the condition is true, one block of code executes.
+
+* If the condition is false, another block may execute.
+
+Example: If a student gets marks greater than or equal to 35, print Pass; otherwise, print Fail.
+
+### 2\. Types of Decision-Making Statements
+
+There are 5 commonly used forms:
+
+* if statement
+
+* if-else statement
+
+* if-else-if ladder
+
+* Nested if statement
+
+* switch statement
+
+### 3\. if Statement
+
+Definition: The if statement executes a block of code only when the condition is true.
+
+Syntax:
+
+```java
+if(condition)
+{
+    // statements
+}
+```
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int age = 22;
+
+        if(age >= 18)
+        {
+            System.out.println("Eligible to vote");
+        }
+    }
+}
+```
+
+Output:
+
+```text
+Eligible to vote
+```
+
+### 4\. if-else Statement
+
+Definition: The if-else statement executes one block when the condition is true and another block when the condition is false.
+
+Syntax:
+
+```java
+if(condition)
+{
+    // true block
+}
+else
+{
+    // false block
+}
+```
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int num = 10;
+
+        if(num % 2 == 0)
+        {
+            System.out.println("Even");
+        }
+        else
+        {
+            System.out.println("Odd");
+        }
+    }
+}
+```
+
+Output:
+
+```text
+Even
+```
+
+### 5\. if-else-if Ladder
+
+Definition: It is used to check multiple conditions one by one.
+
+Syntax:
+
+```java
+if(condition1)
+{
+    // statements
+}
+else if(condition2)
+{
+    // statements
+}
+else if(condition3)
+{
+    // statements
+}
+else
+{
+    // statements
+}
+```
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int marks = 85;
+
+        if(marks >= 90)
+        {
+            System.out.println("A Grade");
+        }
+        else if(marks >= 75)
+        {
+            System.out.println("B Grade");
+        }
+        else if(marks >= 35)
+        {
+            System.out.println("C Grade");
+        }
+        else
+        {
+            System.out.println("Fail");
+        }
+    }
+}
+```
+
+Output:
+
+```text
+B Grade
+```
+
+### 6\. Nested if Statement
+
+Definition: An if statement inside another if statement is called a nested if statement.
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int age = 22;
+        boolean id = true;
+
+        if(age >= 18)
+        {
+            if(id == true)
+            {
+                System.out.println("Allowed");
+            }
+        }
+    }
+}
+```
+
+Output:
+
+```text
+Allowed
+```
+
+### 7\. switch Statement
+
+Definition: The switch statement is used to select one block of code from multiple choices based on an expression's value.
+
+Syntax:
+
+```java
+switch(expression)
+{
+    case 1:
+        // statements
+        break;
+
+    case 2:
+        // statements
+        break;
+
+    default:
+        // statements
+}
+```
+
+Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int day = 2;
+
+        switch(day)
+        {
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednesday");
+                break;
+
+            default:
+                System.out.println("Invalid day");
+        }
+    }
+}
+```
+
+Output:
+
+```text
+Tuesday
+```
+
+### 8\. Difference Between Decision-Making Statements
+
+| Statement  | Purpose                       |
+| ---------- | ----------------------------- |
+| if         | Checks one condition          |
+| if-else    | Checks true or false          |
+| if-else-if | Checks multiple conditions    |
+| Nested if  | if inside another if          |
+| switch     | Selects from multiple choices |
+
+### 9\. Important Interview Questions
+
+* What is a decision-making statement?
+
+* How many types of decision-making statements are commonly used?
+
+* What is the difference between if and if-else?
+
+* What is a nested if?
+
+* What is an if-else-if ladder?
+
+* What is the purpose of break in switch?
+
+* What is the use of default in switch?
+
+* Can we use String in switch? Yes.
+
+### 10\. Practice Programs
+
+Try these programs yourself:
+
+* Check whether a number is positive or negative.
+
+* Check whether a number is even or odd.
+
+* Find the biggest of two numbers.
+
+* Find the biggest of three numbers.
+
+* Check whether a person is eligible to vote.
+
+* Check whether a year is a leap year.
+
+* Create a calculator using switch.
+
+* Print the day of the week using switch.
+
+Remember: Decision-making statements help Java programs choose which code to execute based on conditions.
