@@ -1067,5 +1067,162 @@ class Demo
         }
     }
 }*/
+Here are Java programs 40 to 45 in simple code.
+
+### 40\. Check Even or Odd
+
+```java
+import java.util.Scanner;
+
+class EvenOdd
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        if(n % 2 == 0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+}
+```
+
+### 41\. Check Prime Number
+
+```java
+import java.util.Scanner;
+
+class Prime
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int count = 0;
+
+        for(int i = 1; i <= n; i++)
+        {
+            if(n % i == 0)
+                count++;
+        }
+
+        if(count == 2)
+            System.out.println("Prime");
+        else
+            System.out.println("Not Prime");
+    }
+}
+```
+
+### 42\. Reverse a Number
+
+```java
+import java.util.Scanner;
+
+class Reverse
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int rev = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            rev = rev * 10 + rem;
+            n = n / 10;
+        }
+
+        System.out.println(rev);
+    }
+}
+```
+
+### 43\. Palindrome Number
+
+```java
+import java.util.Scanner;
+
+class Palindrome
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n, rev = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            rev = rev * 10 + rem;
+            n = n / 10;
+        }
+
+        if(temp == rev)
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
+```
+
+### 44\. Sum of Digits
+
+```java
+import java.util.Scanner;
+
+class SumDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            sum = sum + rem;
+            n = n / 10;
+        }
+
+        System.out.println(sum);
+    }
+}
+```
+
+### 45\. Factorial of a Number
+
+```java
+import java.util.Scanner;
+
+class Factorial
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int fact = 1;
+
+        for(int i = 1; i <= n; i++)
+        {
+            fact = fact * i;
+        }
+
+        System.out.println(fact);
+    }
+}
+```
+
+Next: I can also give you the output and a simple line-by-line explanation for all six programs.
 
 
