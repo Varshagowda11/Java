@@ -1225,26 +1225,143 @@ class Factorial
 
 Next: I can also give you the output and a simple line-by-line explanation for all six programs.
 
-//40. Write a program to print the first n natural numbers.
+### **46. Armstrong Number**
 
-class Demo40 {
-    public static void main(String[] args) {
-        int n = 10;
+```
+import java.util.Scanner;
 
-        for (int i = 1; i <= n; i++) {
-            System.out.println(i);
+class Armstrong
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n, sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            sum = sum + rem * rem * rem;
+            n = n / 10;
         }
+
+        if(temp == sum)
+            System.out.println("Armstrong Number");
+        else
+            System.out.println("Not Armstrong Number");
     }
 }
+```
 
-/*output:1
-2
-3
-4
-5
-6
-7
-8
-9
-10*/
+### **47. Count the Number of Digits**
+
+```
+import java.util.Scanner;
+
+class CountDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int count = 0;
+
+        while(n > 0)
+        {
+            count++;
+            n = n / 10;
+        }
+
+        System.out.println("Count = " + count);
+    }
+}
+```
+
+### **48. Find the Largest Digit in a Number**
+
+```
+import java.util.Scanner;
+
+class LargestDigit
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int max = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+
+            if(rem > max)
+                max = rem;
+
+            n = n / 10;
+        }
+
+        System.out.println("Largest Digit = " + max);
+    }
+}
+```
+
+### **49. Find the Smallest Digit in a Number**
+
+```
+import java.util.Scanner;
+
+class SmallestDigit
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int min = 9;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+
+            if(rem < min)
+                min = rem;
+
+            n = n / 10;
+        }
+
+        System.out.println("Smallest Digit = " + min);
+    }
+}
+```
+
+### **50. Find the Product of Digits**
+
+```
+import java.util.Scanner;
+
+class ProductDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int product = 1;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            product = product * rem;
+            n = n / 10;
+        }
+
+        System.out.println("Product = " + product);
+    }
+}
+```
+
+**Note:** Program 46 uses the traditional 3-digit Armstrong logic (for example, 153). For Armstrong numbers with any number of digits, the power must be adjusted.
 
