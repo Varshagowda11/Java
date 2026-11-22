@@ -1183,3 +1183,239 @@ Try these programs yourself:
 * Print the day of the week using switch.
 
 Remember: Decision-making statements help Java programs choose which code to execute based on conditions.
+
+
+1. What is a Loop?
+A loop is a programming statement used to execute a block of code repeatedly until a given condition becomes false.
+- It is used to reduce code repetition.
+- It saves time and effort.
+- It executes statements repeatedly based on a condition.
+Example: Printing numbers from 1 to 10.
+2. Types of Loops in Java
+There are 3 main types of loops:
+1. for loop
+2. while loop
+3. do-while loop
+Other forms include nested loops and enhanced for-each loops.
+
+3. for Loop
+Definition: A for loop is used when we know how many times we want to execute a block of code.
+
+Syntax:
+for(initialization; condition; increment/decrement)
+{
+    // statements
+}
+
+
+Example:
+class Demo
+{
+    public static void main(String[] args)
+    {
+        for(int i = 1; i <= 5; i++)
+        {
+            System.out.println(i);
+        }
+    }
+}
+
+
+Output:
+1
+2
+3
+4
+5
+
+
+Explanation:
+- Initialization: int i = 1
+- Condition: i <= 5
+- Increment: i++
+4. while Loop
+Definition: A while loop executes a block of code as long as the given condition is true.
+
+Syntax:
+initialization;
+
+while(condition)
+{
+    // statements
+    increment/decrement;
+}
+
+
+Example:
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int i = 1;
+
+        while(i <= 5)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+
+Output:
+1
+2
+3
+4
+5
+
+
+5. do-while Loop
+Definition: A do-while loop executes the statements at least once, even if the condition is false.
+
+Syntax:
+initialization;
+
+do
+{
+    // statements
+    increment/decrement;
+}
+while(condition);
+
+
+Example:
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int i = 1;
+
+        do
+        {
+            System.out.println(i);
+            i++;
+        }
+        while(i <= 5);
+    }
+}
+
+
+Output:
+1
+2
+3
+4
+5
+
+
+
+6. Difference Between for, while and do-while
+for loop	while loop	do-while loop
+Entry-controlled	Entry-controlled	Exit-controlled
+Checks condition first	Checks condition first	Checks condition after execution
+Initialization, condition and update in one statement	Written separately	Written separately
+May execute zero times	May execute zero times	Executes at least once
+
+7. Nested Loop
+Definition: A loop inside another loop is called a nested loop.
+
+Example:
+class Demo
+{
+    public static void main(String[] args)
+    {
+        for(int i = 1; i <= 3; i++)
+        {
+            for(int j = 1; j <= 3; j++)
+            {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+Output:
+* * *
+* * *
+* * *
+
+
+8. Enhanced for Loop (For-Each Loop)
+Definition: The enhanced for loop is used to traverse arrays and collections easily.
+
+Syntax:
+for(dataType variable : array)
+{
+    // statements
+}
+
+
+Example:
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int a[] = {10, 20, 30, 40, 50};
+
+        for(int x : a)
+        {
+            System.out.println(x);
+        }
+    }
+}
+
+
+Output:
+10
+20
+30
+40
+50
+
+
+
+9. Loop Control Statements
+There are three important loop control statements:
+1. break
+- Used to terminate the loop immediately.
+for(int i = 1; i <= 5; i++)
+{
+    if(i == 3)
+    {
+        break;
+    }
+    System.out.println(i);
+}
+
+
+Output:
+1
+2
+
+
+2. continue
+- Skips the current iteration and moves to the next iteration.
+for(int i = 1; i <= 5; i++)
+{
+    if(i == 3)
+    {
+        continue;
+    }
+    System.out.println(i);
+}
+
+
+Output:
+1
+2
+4
+5
+
+
+3. return
+- Used to exit from the current method.
+- It can also return a value from a method.
