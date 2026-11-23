@@ -1419,3 +1419,264 @@ Output:
 3. return
 - Used to exit from the current method.
 - It can also return a value from a method.
+### Java Notes – Type Casting in Java
+
+### 1\. What is Type Casting?
+
+Type Casting is the process of converting one data type into another data type.
+
+* It is used to convert values from one data type to another.
+
+* It helps when we want to perform operations using different data types.
+
+Example:
+
+```java
+int a = 10;
+double b = a;
+```
+
+Here, `int` is converted into `double`.
+
+### 2\. Types of Type Casting in Java
+
+There are two types of type casting:
+
+* Widening Casting (Implicit Casting)
+
+* Narrowing Casting (Explicit Casting)
+
+Type Casting
+
+Widening
+
+Small → Large
+
+Automatic
+
+Narrowing
+
+Large → Small
+
+Manual
+
+### 3\. Widening Casting (Implicit Casting)
+
+Definition: Converting a smaller data type into a larger data type is called widening casting.
+
+* It happens automatically.
+
+* No need to mention the target data type.
+
+* There is generally no loss of information when converting between these numeric types.
+
+### Order of Widening
+
+byte
+
+short
+
+int
+
+long
+
+float
+
+double
+
+Smaller to larger (general widening order)
+
+Note: `char` can also be widened to `int`, `long`, `float` and `double`.
+
+### Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        int a = 10;
+
+        double b = a;
+
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+
+Output:
+
+```text
+10
+10.0
+```
+
+Explanation:
+
+* `a` is an integer.
+
+* `b` is a double.
+
+* Java automatically converts `int` into `double`.
+
+### 4\. Narrowing Casting (Explicit Casting)
+
+Definition: Converting a larger data type into a smaller data type is called narrowing casting.
+
+* It is performed manually.
+
+* We need to specify the target data type.
+
+* There may be a loss of data.
+
+### Syntax:
+
+```java
+targetDataType variable = (targetDataType) value;
+```
+
+### Example:
+
+```java
+class Demo
+{
+    public static void main(String[] args)
+    {
+        double a = 10.75;
+
+        int b = (int) a;
+
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+
+Output:
+
+```text
+10.75
+10
+```
+
+Explanation:
+
+* `a` is a double.
+
+* `b` is an integer.
+
+* We manually convert double into int.
+
+* The decimal part `.75` is lost.
+
+### 5\. Difference Between Widening and Narrowing
+
+| Widening                     | Narrowing                 |
+| ---------------------------- | ------------------------- |
+| Small to large               | Large to small            |
+| Automatic                    | Manual                    |
+| Implicit casting             | Explicit casting          |
+| Usually no information loss  | May lose information      |
+| No casting operator required | Casting operator required |
+
+### 6\. More Examples
+
+### Example 1: int to double
+
+```java
+int a = 100;
+double b = a;
+
+System.out.println(b);
+```
+
+Output: `100.0`
+
+### Example 2: double to int
+
+```java
+double a = 25.99;
+int b = (int) a;
+
+System.out.println(b);
+```
+
+Output: `25`
+
+### Example 3: char to int
+
+```java
+char a = 'A';
+int b = a;
+
+System.out.println(b);
+```
+
+Output: `65`
+
+### Example 4: int to char
+
+```java
+int a = 66;
+char b = (char) a;
+
+System.out.println(b);
+```
+
+Output: `B`
+
+### 7\. Important Interview Questions
+
+* What is type casting?
+
+* How many types of type casting are there?
+
+* What is widening casting?
+
+* What is narrowing casting?
+
+* What is implicit casting?
+
+* What is explicit casting?
+
+* Is type casting automatic in widening?
+
+* Is type casting automatic in narrowing?
+
+* What happens when we convert double into int?
+
+* What is the difference between widening and narrowing?
+
+### 8\. Practice Programs
+
+Try these yourself:
+
+* Convert int into float.
+
+* Convert int into double.
+
+* Convert double into int.
+
+* Convert float into long.
+
+* Convert char into int.
+
+* Convert int into char.
+
+* Convert long into short.
+
+* Convert double into byte.
+
+Remember
+
+* Widening = Small → Large = Automatic.
+
+* Narrowing = Large → Small = Manual.
+
+* `(int)` is an example of explicit casting.
+
+* Decimal values are truncated when converted to integers; they are not rounded.
+
+Next topic: Operators in Java (Arithmetic, Relational, Logical, Assignment and Unary).
+
