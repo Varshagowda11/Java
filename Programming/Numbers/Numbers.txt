@@ -1364,4 +1364,172 @@ class ProductDigits
 ```
 
 **Note:** Program 46 uses the traditional 3-digit Armstrong logic (for example, 153). For Armstrong numbers with any number of digits, the power must be adjusted.
+### 51\. Find the Sum of Even Digits
+
+```java
+import java.util.Scanner;
+
+class SumEvenDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+
+            if(rem % 2 == 0)
+                sum = sum + rem;
+
+            n = n / 10;
+        }
+
+        System.out.println("Sum of Even Digits = " + sum);
+    }
+}
+```
+
+### 52\. Find the Sum of Odd Digits
+
+```java
+import java.util.Scanner;
+
+class SumOddDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+
+            if(rem % 2 != 0)
+                sum = sum + rem;
+
+            n = n / 10;
+        }
+
+        System.out.println("Sum of Odd Digits = " + sum);
+    }
+}
+```
+
+### 53\. Check Strong Number
+
+```java
+import java.util.Scanner;
+
+class StrongNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n, sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            int fact = 1;
+
+            for(int i = 1; i <= rem; i++)
+            {
+                fact = fact * i;
+            }
+
+            sum = sum + fact;
+            n = n / 10;
+        }
+
+        if(temp == sum)
+            System.out.println("Strong Number");
+        else
+            System.out.println("Not Strong Number");
+    }
+}
+```
+
+### 54\. Check Perfect Number
+
+```java
+import java.util.Scanner;
+
+class PerfectNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for(int i = 1; i < n; i++)
+        {
+            if(n % i == 0)
+                sum = sum + i;
+        }
+
+        if(sum == n)
+            System.out.println("Perfect Number");
+        else
+            System.out.println("Not Perfect Number");
+    }
+}
+```
+
+### 55\. Check Automorphic Number
+
+```java
+import java.util.Scanner;
+
+class Automorphic
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int square = n * n;
+        int temp = n;
+        int count = 0;
+
+        while(temp > 0)
+        {
+            count++;
+            temp = temp / 10;
+        }
+
+        int power = 1;
+
+        for(int i = 1; i <= count; i++)
+        {
+            power = power * 10;
+        }
+
+        if(square % power == n)
+            System.out.println("Automorphic Number");
+        else
+            System.out.println("Not Automorphic Number");
+    }
+}
+```
+
+Examples to remember:
+
+| Program | Example | Output      |
+| ------- | ------- | ----------- |
+| 51      | 2468    | 20          |
+| 52      | 1357    | 16          |
+| 53      | 145     | Strong      |
+| 54      | 6       | Perfect     |
+| 55      | 25      | Automorphic |
 
