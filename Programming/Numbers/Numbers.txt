@@ -1533,3 +1533,169 @@ Examples to remember:
 | 54      | 6       | Perfect     |
 | 55      | 25      | Automorphic |
 
+### 56\. Check Neon Number
+
+```java
+import java.util.Scanner;
+
+class NeonNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int square = n * n;
+        int sum = 0;
+
+        while(square > 0)
+        {
+            int rem = square % 10;
+            sum = sum + rem;
+            square = square / 10;
+        }
+
+        if(sum == n)
+            System.out.println("Neon Number");
+        else
+            System.out.println("Not Neon Number");
+    }
+}
+```
+
+### 57\. Check Spy Number
+
+```java
+import java.util.Scanner;
+
+class SpyNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0, product = 1;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+
+            sum = sum + rem;
+            product = product * rem;
+
+            n = n / 10;
+        }
+
+        if(sum == product)
+            System.out.println("Spy Number");
+        else
+            System.out.println("Not Spy Number");
+    }
+}
+```
+
+### 58\. Check Harshad Number
+
+```java
+import java.util.Scanner;
+
+class HarshadNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int temp = n, sum = 0;
+
+        while(n > 0)
+        {
+            int rem = n % 10;
+            sum = sum + rem;
+            n = n / 10;
+        }
+
+        if(temp > 0 && temp % sum == 0)
+            System.out.println("Harshad Number");
+        else
+            System.out.println("Not Harshad Number");
+    }
+}
+```
+
+### 59\. Check Sunny Number
+
+```java
+import java.util.Scanner;
+
+class SunnyNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int num = n + 1;
+        int count = 0;
+
+        for(int i = 1; i <= num; i++)
+        {
+            if(num % i == 0)
+                count++;
+        }
+
+        if(count == 2 && num == 1)
+            System.out.println("Sunny Number");
+        else
+        {
+            int sqrt = (int)Math.sqrt(num);
+
+            if(sqrt * sqrt == num)
+                System.out.println("Sunny Number");
+            else
+                System.out.println("Not Sunny Number");
+        }
+    }
+}
+```
+
+### 60\. Check Abundant Number
+
+```java
+import java.util.Scanner;
+
+class AbundantNumber
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for(int i = 1; i < n; i++)
+        {
+            if(n % i == 0)
+                sum = sum + i;
+        }
+
+        if(sum > n)
+            System.out.println("Abundant Number");
+        else
+            System.out.println("Not Abundant Number");
+    }
+}
+```
+
+### Examples
+
+| No. | Number | Output          |
+| --- | ------ | --------------- |
+| 56  | 9      | Neon Number     |
+| 57  | 1124   | Spy Number      |
+| 58  | 18     | Harshad Number  |
+| 59  | 8      | Sunny Number    |
+| 60  | 12     | Abundant Number |
+
+Small correction for program 59: The `count` variable is unnecessary; the square-root check alone is sufficient.
