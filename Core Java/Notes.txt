@@ -2,6 +2,7 @@ Java
 Java is a programming language.
 
 Language
+
 Language is a medium to communicate between two entities.
 Entities: Which exist in the world and occupy space.
 Example: Human beings communicate with each other using language.
