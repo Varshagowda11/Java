@@ -1,0 +1,149 @@
+Here are Java String Programs 1–5 with simple logic and beginner-friendly code.
+
+### 1\. Find the Length of a String
+
+```java
+import java.util.Scanner;
+
+class StringLength
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        System.out.println("Length = " + s.length());
+    }
+}
+```
+
+Example: Input: `Java` → Output: `4`
+
+### 2\. Reverse a String
+
+```java
+import java.util.Scanner;
+
+class ReverseString
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String rev = "";
+
+        for(int i = s.length()-1; i >= 0; i--)
+        {
+            rev = rev + s.charAt(i);
+        }
+
+        System.out.println("Reverse = " + rev);
+    }
+}
+```
+
+Example: Input: `Java` → Output: `avaJ`
+
+### 3\. Check Palindrome String
+
+```java
+import java.util.Scanner;
+
+class PalindromeString
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String rev = "";
+
+        for(int i = s.length()-1; i >= 0; i--)
+        {
+            rev = rev + s.charAt(i);
+        }
+
+        if(s.equals(rev))
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+    }
+}
+```
+
+Example: Input: `madam` → Output: `Palindrome`
+
+### 4\. Count Vowels and Consonants
+
+```java
+import java.util.Scanner;
+
+class VowelsConsonants
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        int vowels = 0, consonants = 0;
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = Character.toLowerCase(s.charAt(i));
+
+            if(ch >= 'a' && ch <= 'z')
+            {
+                if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                    vowels++;
+                else
+                    consonants++;
+            }
+        }
+
+        System.out.println("Vowels = " + vowels);
+        System.out.println("Consonants = " + consonants);
+    }
+}
+```
+
+Example: Input: `Java` → Vowels = 2, Consonants = 2
+
+### 5\. Count the Number of Words in a String
+
+```java
+import java.util.Scanner;
+
+class CountWords
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine().trim();
+
+        int count = 0;
+
+        if(!s.isEmpty())
+        {
+            String words[] = s.split("\\s+");
+            count = words.length;
+        }
+
+        System.out.println("Number of Words = " + count);
+    }
+}
+```
+
+Example: Input: `Java is easy` → Output: `3`
+
+Next, we can continue with String Programs 6–10, following the same numbering and simple Java coding style.
