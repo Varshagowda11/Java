@@ -1789,3 +1789,181 @@ Remember:
 * Named Function → Function with a name.
 
 * Anonymous Function → Function without a name.
+### Java Notes – First 2 Types of Operators
+
+### 1\. Arithmetic Operators
+
+Definition: Arithmetic operators are used to perform mathematical operations on variables and values.
+
+| Operator | Name           | Example | Result |
+| -------- | -------------- | ------- | ------ |
+| +        | Addition       | 10 + 5  | 15     |
+| -        | Subtraction    | 10 - 5  | 5      |
+| *        | Multiplication | 10 * 5  | 50     |
+| /        | Division       | 10 / 5  | 2      |
+| %        | Modulus        | 10 % 3  | 1      |
+
+### Example Program
+
+```java
+class Arithmetic
+{
+    public static void main(String[] args)
+    {
+        int a = 10;
+        int b = 3;
+
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+    }
+}
+```
+
+Output:
+
+```text
+13
+7
+30
+3
+1
+```
+
+Important:
+
+* `/` gives quotient.
+
+* `%` gives remainder.
+
+### 2\. Unary Operators
+
+Definition: Operators that work with only one operand are called unary operators.
+
+### Types of Unary Operators
+
+| Operator | Name        | Meaning                |
+| -------- | ----------- | ---------------------- |
+| +        | Unary plus  | Positive value         |
+| -        | Unary minus | Changes sign           |
+| ++       | Increment   | Increases value by 1   |
+| --       | Decrement   | Decreases value by 1   |
+| !        | Logical NOT | Reverses boolean value |
+
+### A. Increment Operator (++)
+
+It increases the value of a variable by 1.
+
+1\. Pre-increment (++a)
+
+First increments, then uses the value.
+
+```java
+int a = 10;
+System.out.println(++a);
+```
+
+Output: `11`
+
+2\. Post-increment (a++)
+
+First uses the value, then increments.
+
+```java
+int a = 10;
+System.out.println(a++);
+System.out.println(a);
+```
+
+Output:
+
+```text
+10
+11
+```
+
+### B. Decrement Operator (--)
+
+It decreases the value of a variable by 1.
+
+1\. Pre-decrement (--a)
+
+```java
+int a = 10;
+System.out.println(--a);
+```
+
+Output: `9`
+
+2\. Post-decrement (a--)
+
+```java
+int a = 10;
+System.out.println(a--);
+System.out.println(a);
+```
+
+Output:
+
+```text
+10
+9
+```
+
+### C. Unary Plus (+) and Unary Minus (-)
+
+```java
+int a = 10;
+
+System.out.println(+a);
+System.out.println(-a);
+```
+
+Output:
+
+```text
+10
+-10
+```
+
+### D. Logical NOT (!)
+
+It reverses the boolean value.
+
+```java
+boolean a = true;
+
+System.out.println(!a);
+```
+
+Output:
+
+```text
+false
+```
+
+### Important Difference: Pre and Post Increment
+
+| Pre-increment    | Post-increment   |
+| ---------------- | ---------------- |
+| ++a              | a++              |
+| Increments first | Uses value first |
+| Then evaluates   | Then increments  |
+
+### Practice Questions
+
+* What is the difference between `++a` and `a++`?
+
+* What is the difference between `--a` and `a--`?
+
+* What is the output of `int a=5; System.out.println(a++ + ++a);`?
+
+* What is the output of `int a=10; System.out.println(-a);`?
+
+Today's topics:
+
+* * Arithmetic Operators
+
+* * Unary Operators
