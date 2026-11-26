@@ -293,3 +293,84 @@ class CharacterCount
 | 8   | Convert case                  | toUpperCase()     |
 | 9   | Remove spaces                 | replace()         |
 | 10  | Character occurrence          | for loop          |
+### Java String Programs 11–12
+
+### 11\. Remove Duplicate Characters from a String
+
+```java
+import java.util.Scanner;
+
+class RemoveDuplicate
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String result = "";
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s.charAt(i);
+
+            if(result.indexOf(ch) == -1)
+            {
+                result = result + ch;
+            }
+        }
+
+        System.out.println("After Removing Duplicates = " + result);
+    }
+}
+```
+
+Example:
+
+Input: `programming`
+
+Output: `progamin`
+
+### 12\. Find the First Non-Repeated Character in a String
+
+```java
+import java.util.Scanner;
+
+class FirstNonRepeated
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s.charAt(i);
+            int count = 0;
+
+            for(int j = 0; j < s.length(); j++)
+            {
+                if(ch == s.charAt(j))
+                {
+                    count++;
+                }
+            }
+
+            if(count == 1)
+            {
+                System.out.println("First Non-Repeated Character = " + ch);
+                break;
+            }
+        }
+    }
+}
+```
+
+Example:
+
+Input: `swiss`
+
+Output: `w`
