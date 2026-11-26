@@ -147,3 +147,149 @@ class CountWords
 Example: Input: `Java is easy` → Output: `3`
 
 Next, we can continue with String Programs 6–10, following the same numbering and simple Java coding style.
+### Java String Programs 6–10
+
+### 6\. Count Uppercase and Lowercase Characters
+
+```java
+import java.util.Scanner;
+
+class UpperLower
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        int upper = 0, lower = 0;
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s.charAt(i);
+
+            if(ch >= 'A' && ch <= 'Z')
+                upper++;
+            else if(ch >= 'a' && ch <= 'z')
+                lower++;
+        }
+
+        System.out.println("Uppercase = " + upper);
+        System.out.println("Lowercase = " + lower);
+    }
+}
+```
+
+### 7\. Count Digits and Special Characters in a String
+
+```java
+import java.util.Scanner;
+
+class DigitsSpecial
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        int digits = 0, special = 0;
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s.charAt(i);
+
+            if(ch >= '0' && ch <= '9')
+                digits++;
+            else if(!Character.isLetter(ch) && !Character.isWhitespace(ch))
+                special++;
+        }
+
+        System.out.println("Digits = " + digits);
+        System.out.println("Special Characters = " + special);
+    }
+}
+```
+
+### 8\. Convert String into Uppercase and Lowercase
+
+```java
+import java.util.Scanner;
+
+class ConvertCase
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        System.out.println("Uppercase = " + s.toUpperCase());
+        System.out.println("Lowercase = " + s.toLowerCase());
+    }
+}
+```
+
+### 9\. Remove Spaces from a String
+
+```java
+import java.util.Scanner;
+
+class RemoveSpaces
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String result = s.replace(" ", "");
+
+        System.out.println("After Removing Spaces = " + result);
+    }
+}
+```
+
+### 10\. Count Occurrences of a Particular Character
+
+```java
+import java.util.Scanner;
+
+class CharacterCount
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        System.out.println("Enter a Character:");
+        char ch = sc.next().charAt(0);
+
+        int count = 0;
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            if(s.charAt(i) == ch)
+                count++;
+        }
+
+        System.out.println("Occurrence = " + count);
+    }
+}
+```
+
+### Quick revision
+
+| No. | Program                       | Main concept      |
+| --- | ----------------------------- | ----------------- |
+| 6   | Uppercase and lowercase count | charAt()          |
+| 7   | Digits and special characters | Character methods |
+| 8   | Convert case                  | toUpperCase()     |
+| 9   | Remove spaces                 | replace()         |
+| 10  | Character occurrence          | for loop          |
