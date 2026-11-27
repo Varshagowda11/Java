@@ -461,3 +461,100 @@ Input:
 Output: `Anagram`
 
 Next programs will be 15–16.
+### Java String Programs 15–16
+
+### 15\. Check Whether a String Contains Only Digits
+
+```java
+import java.util.Scanner;
+
+class OnlyDigits
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        int count = 0;
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s.charAt(i);
+
+            if(ch >= '0' && ch <= '9')
+                count++;
+        }
+
+        if(count == s.length() && !s.isEmpty())
+            System.out.println("Only Digits");
+        else
+            System.out.println("Not Only Digits");
+    }
+}
+```
+
+Example:
+
+Input: `12345`
+
+Output: `Only Digits`
+
+### 16\. Find the Frequency of Each Character in a String
+
+```java
+import java.util.Scanner;
+
+class CharacterFrequency
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        for(int i = 0; i < s.length(); i++)
+        {
+            int count = 0;
+            boolean found = false;
+
+            for(int j = 0; j < i; j++)
+            {
+                if(s.charAt(i) == s.charAt(j))
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if(!found)
+            {
+                for(int j = 0; j < s.length(); j++)
+                {
+                    if(s.charAt(i) == s.charAt(j))
+                        count++;
+                }
+
+                System.out.println(s.charAt(i) + " = " + count);
+            }
+        }
+    }
+}
+```
+
+Example:
+
+Input: `hello`
+
+Output:
+
+```text
+h = 1
+e = 1
+l = 2
+o = 1
+```
+
+Next: String Programs 17–18.
