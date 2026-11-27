@@ -2110,3 +2110,183 @@ Practice questions:
 * Check whether a student passed both Maths and Science.
 
 Next two operators will be Bitwise Operators and Assignment Operators.
+### 5\. Bitwise Operators in Java
+
+Definition: Bitwise operators are used to perform operations on individual bits of integer values (binary numbers).
+
+### Types of Bitwise Operators
+
+| Operator | Name                 | Meaning                                |
+| -------- | -------------------- | -------------------------------------- |
+| &        | Bitwise AND          | Returns 1 if both bits are 1           |
+| \\\|     | Bitwise OR           | Returns 1 if at least one bit is 1     |
+| ^        | Bitwise XOR          | Returns 1 if both bits are different   |
+| ~        | Bitwise NOT          | Reverses all bits                      |
+| <<       | Left Shift           | Shifts bits to the left                |
+| >>       | Right Shift          | Shifts bits to the right               |
+| >>>      | Unsigned Right Shift | Shifts bits right and fills with zeros |
+
+### Example 1: Bitwise AND (`&`)
+
+```java
+public class BitwiseDemo {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 3;
+
+        System.out.println(a & b);
+    }
+}
+```
+
+Binary calculation:
+
+```text
+5 = 0101
+3 = 0011
+    ----
+    0001 = 1
+```
+
+Output:
+
+```text
+1
+```
+
+### Example 2: Bitwise OR (`|`)
+
+```java
+int a = 5;
+int b = 3;
+
+System.out.println(a | b);
+```
+
+Output:
+
+```text
+7
+```
+
+### Example 3: Bitwise XOR (`^`)
+
+```java
+int a = 5;
+int b = 3;
+
+System.out.println(a ^ b);
+```
+
+Output:
+
+```text
+6
+```
+
+### Example 4: Bitwise NOT (`~`)
+
+```java
+int a = 5;
+
+System.out.println(~a);
+```
+
+Output:
+
+```text
+-6
+```
+
+### Example 5: Shift Operators
+
+```java
+int a = 5;
+
+System.out.println(a << 1);
+System.out.println(a >> 1);
+System.out.println(a >>> 1);
+```
+
+Output:
+
+```text
+10
+2
+2
+```
+
+Important points:
+
+* Bitwise operators work on bits.
+
+* They are mainly used with integer types.
+
+* `&`, `|`, and `^` are different from logical `&&` and `||`.
+
+### 6\. Assignment Operators in Java
+
+Definition: Assignment operators are used to assign values to variables and update their values.
+
+### Types of Assignment Operators
+
+| Operator | Example   | Equivalent to  |
+| -------- | --------- | -------------- |
+| =        | a = 10    | Assign 10 to a |
+| +=       | a += 5    | a = a + 5      |
+| -=       | a -= 5    | a = a - 5      |
+| *=       | a *= 5    | a = a * 5      |
+| /=       | a /= 5    | a = a / 5      |
+| %=       | a %= 5    | a = a % 5      |
+| &=       | a &= 5    | a = a & 5      |
+| \\\|=    | a \\\|= 5 | a = a \\\| 5   |
+| ^=       | a ^= 5    | a = a ^ 5      |
+| <<=      | a <<= 1   | a = a << 1     |
+| >>=      | a >>= 1   | a = a >> 1     |
+| >>>=     | a >>>= 1  | a = a >>> 1    |
+
+### Example Program
+
+```java
+public class AssignmentDemo {
+    public static void main(String[] args) {
+
+        int a = 10;
+
+        a += 5;
+        System.out.println(a);
+
+        a -= 3;
+        System.out.println(a);
+
+        a *= 2;
+        System.out.println(a);
+
+        a /= 4;
+        System.out.println(a);
+
+        a %= 3;
+        System.out.println(a);
+    }
+}
+```
+
+Output:
+
+```text
+15
+12
+24
+6
+0
+```
+
+Important points:
+
+* `=` is the simple assignment operator.
+
+* Compound assignment operators perform an operation and assign the result back to the variable.
+
+* Example: `a += 5` is a shorter way of writing `a = a + 5`.
+
+Next topic: Ternary Operator and `instanceof` Operator.
