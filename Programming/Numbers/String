@@ -558,3 +558,153 @@ o = 1
 ```
 
 Next: String Programs 17–18.
+### Java String Programs 17–20
+
+### 17\. Find the Largest Word in a String
+
+```java
+import java.util.Scanner;
+
+class LargestWord
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String words[] = s.split("\\s+");
+        String largest = "";
+
+        for(int i = 0; i < words.length; i++)
+        {
+            if(words[i].length() > largest.length())
+            {
+                largest = words[i];
+            }
+        }
+
+        System.out.println("Largest Word = " + largest);
+    }
+}
+```
+
+Example: Input: `Java Programming is Easy`
+
+Output: `Programming`
+
+### 18\. Find the Smallest Word in a String
+
+```java
+import java.util.Scanner;
+
+class SmallestWord
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine().trim();
+
+        String words[] = s.split("\\s+");
+        String smallest = words[0];
+
+        for(int i = 1; i < words.length; i++)
+        {
+            if(words[i].length() < smallest.length())
+            {
+                smallest = words[i];
+            }
+        }
+
+        System.out.println("Smallest Word = " + smallest);
+    }
+}
+```
+
+Example: Input: `Java Programming is Easy`
+
+Output: `is`
+
+### 19\. Reverse Each Word in a String
+
+```java
+import java.util.Scanner;
+
+class ReverseEachWord
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String words[] = s.split(" ");
+        String result = "";
+
+        for(int i = 0; i < words.length; i++)
+        {
+            String rev = "";
+
+            for(int j = words[i].length()-1; j >= 0; j--)
+            {
+                rev = rev + words[i].charAt(j);
+            }
+
+            result = result + rev + " ";
+        }
+
+        System.out.println(result.trim());
+    }
+}
+```
+
+Example:
+
+Input: `Java is Easy`
+
+Output: `avaJ si ysaE`
+
+### 20\. Reverse the Order of Words in a String
+
+```java
+import java.util.Scanner;
+
+class ReverseWords
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a String:");
+        String s = sc.nextLine();
+
+        String words[] = s.split("\\s+");
+
+        for(int i = words.length-1; i >= 0; i--)
+        {
+            System.out.print(words[i] + " ");
+        }
+    }
+}
+```
+
+Example:
+
+Input: `Java is Easy`
+
+Output: `Easy is Java`
+
+### Quick revision
+
+| No. | Program            | Main concept |
+| --- | ------------------ | ------------ |
+| 17  | Largest word       | length()     |
+| 18  | Smallest word      | length()     |
+| 19  | Reverse each word  | Nested loops |
+| 20  | Reverse word order | split()      |
+
+Next numbers: 21–24.
