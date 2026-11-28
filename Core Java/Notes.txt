@@ -2290,3 +2290,167 @@ Important points:
 * Example: `a += 5` is a shorter way of writing `a = a + 5`.
 
 Next topic: Ternary Operator and `instanceof` Operator.
+### 7\. Ternary Operator in Java (`?:`)
+
+Definition: The ternary operator is a conditional operator used to make decisions. It is a shorter alternative to the `if-else` statement.
+
+### Syntax
+
+```java
+variable = (condition) ? expression1 : expression2;
+```
+
+* If the condition is `true`, expression1 is executed.
+
+* If the condition is `false`, expression2 is executed.
+
+### Example Program
+
+```java
+public class TernaryDemo {
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        int result = (a > b) ? a : b;
+
+        System.out.println(result);
+    }
+}
+```
+
+Output:
+
+```text
+20
+```
+
+### Example 2: Check Even or Odd
+
+```java
+public class EvenOdd {
+    public static void main(String[] args) {
+
+        int n = 7;
+
+        String result = (n % 2 == 0) ? "Even" : "Odd";
+
+        System.out.println(result);
+    }
+}
+```
+
+Output:
+
+```text
+Odd
+```
+
+Important points:
+
+* Ternary operator uses three operands.
+
+* It uses `?` and `:`.
+
+* It is also called the conditional operator.
+
+* It can replace simple `if-else` statements.
+
+### 8\. `instanceof` Operator in Java
+
+Definition: The `instanceof` operator is used to check whether an object belongs to a particular class or implements a particular interface.
+
+It returns either `true` or `false`.
+
+### Syntax
+
+```java
+object instanceof ClassName
+```
+
+### Example Program
+
+```java
+class Animal {
+}
+
+class Dog extends Animal {
+}
+
+public class InstanceofDemo {
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        System.out.println(d instanceof Dog);
+        System.out.println(d instanceof Animal);
+    }
+}
+```
+
+Output:
+
+```text
+true
+true
+```
+
+Explanation:
+
+* `d instanceof Dog` returns `true` because `d` refers to a Dog object.
+
+* `d instanceof Animal` also returns `true` because Dog inherits Animal.
+
+### Example 2: With String
+
+```java
+public class InstanceofDemo {
+    public static void main(String[] args) {
+
+        String name = "Java";
+
+        System.out.println(name instanceof String);
+        System.out.println(name instanceof Object);
+    }
+}
+```
+
+Output:
+
+```text
+true
+true
+```
+
+Important points:
+
+* `instanceof` checks an object's type.
+
+* It returns a boolean value (`true` or `false`).
+
+* It is commonly used with inheritance and interfaces.
+
+* If the reference is `null`, `instanceof` returns `false`.
+
+### Java Operators – Completed
+
+You have now covered all 8 categories of Java operators:
+
+* Arithmetic Operators
+
+* Unary Operators
+
+* Relational Operators
+
+* Logical Operators
+
+* Bitwise Operators
+
+* Assignment Operators
+
+* Ternary Operator
+
+* `instanceof` Operator
+
+Next topic: Control Statements in Java – revision and practice programs.
